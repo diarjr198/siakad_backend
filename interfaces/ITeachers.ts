@@ -1,0 +1,51 @@
+import IActiveStatus from "./IActiveStatus";
+import IEmpoloymentStatus from "./IEmploymentStatus";
+import IGenders from "./IGenders";
+import IReligions from "./IReligions";
+import IMaritalStatus from "./IStatusMarital";
+import ITypePTK from "./ITypePTK";
+
+interface ITeachers {
+    nip: string;
+    password: string;
+    nama_guru: string;
+    jenis_kelamin: IGenders;
+    tempat_lahir: string;
+    tanggal_lahir: string;
+    nik: string;
+    nuptk: string;
+    status_kepegawaian: IEmpoloymentStatus;
+    jenis_ptk: ITypePTK;
+    agama: IReligions;
+    alamat: string;
+    rt: string;
+    rw: string;
+    desa_kelurahan: string;
+    kecamatan: string;
+    kode_pos: number;
+    telepon: string;
+    hp: string;
+    email: string;
+    tugas_tambahan: string;
+    status_keaktifan: IActiveStatus;
+    sk_cpns: string;
+    tanggal_cpns: string;
+    sk_pengangkatan: string;
+    tmt_pengangkatan: string;
+    lembaga_pengangkatan: string;
+    golongan: string;
+    sumber_gaji: string;
+    nama_ibu_kandung: string;
+    status_pernikahan: IMaritalStatus;
+    nama_suami_istri: string;
+    nip_suami_istri: string;
+    pekerjaan_suami_istri: string;
+    tmt_pns: string;
+    lisensi_kepsek: string;
+    jumlah_sekolah_binaan: string;
+    npwp: string;
+    kewarganegaraan: string;
+    foto: string;
+}
+
+export default ITeachers;

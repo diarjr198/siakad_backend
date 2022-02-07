@@ -1,0 +1,55 @@
+import IClasses from "./IClasses";
+import IGenders from "./IGenders";
+import IMajors from "./IMajors";
+import IReligions from "./IReligions";
+
+interface IStudents {
+    nis: string;
+    password: string;
+    nama: string;
+    jenis_kelamin: IGenders;
+    nisn: string;
+    tempat_lahir: string;
+    nik: string;
+    agama: IReligions;
+    kebutuhan_khusus: string;
+    alamat: string;
+    rt: string;
+    rw: string;
+    dusun: string;
+    kelurahan: string;
+    kecamatan: string;
+    kode_pos: number;
+    jenis_tinggal: string;
+    alat_transportasi: string;
+    telepon: string;
+    hp: string;
+    email: string;
+    foto: string;
+    nama_ayah: string;
+    tahun_lahir_ayah: number;
+    pendidikan_ayah: string;
+    pekerjaan_ayah: string;
+    penghasilan_ayah: string;
+    kebutuhan_khusus_ayah: string;
+    no_telepon_ayah: string;
+    nama_ibu: string;
+    tahun_lahir_ibu: number;
+    pendidikan_ibu: string;
+    pekerjaan_ibu: string;
+    penghasilan_ibu: string;
+    kebutuhan_khusus_ibu: string;
+    no_telepon_ibu: string;
+    nama_wali: string;
+    tahun_lahir_wali: number;
+    pendidikan_wali: string;
+    pekerjaan_wali: string;
+    penghasilan_wali: string;
+    angkatan: number;
+    status_awal: string;
+    status_siswa: string;
+    kelas: IClasses;
+    jurusan: IMajors;
+}
+
+export default IStudents;
